@@ -1,0 +1,69 @@
+jQuery
+四大功能
+HTML文档遍历和操作
+事件处理
+动画
+Ajax
+$符是什么意思:
+			Jquery的简写
+链式写法:
+一、	文档的遍历和操作
+1、	获取元素
+$(“任意选择器”) 全选元素
+2、	标签里的属性<img src=”/>
+attr()方法
+3、	Css里面的属性:
+css(“属性名”,属性值)
+4、	文本:(标签之间的文本,input里面的文本，标签之间的html文档)innerText innerHTML
+标签之间的文本：text(),可以加参数，加参数表示设置文本
+Input里面的文本 val()
+标签之间的html文档  html()
+
+以上操作之间先引用jquery,利用script
+		<script src=”jquery路径”></script>
+二、	动画
+$(“元素”).animate({属性的终值}，秒数，完成后的动作)
+animate与其它语句很可能是异步
+animate之间是同步
+三、	事件：
+两种范式:函数式编程   面向对象
+	函数式编程 
+	加载后执行的函数
+			$(function(){
+			});
+			全称格式:
+			$(document).ready(function(){
+			});
+方法:
+	点击事件(js onclick)
+			$(“元素”).click(function(){
+			})
+	mousedown鼠标按下
+	mousemove鼠标移动
+	mouseup鼠标抬起
+	keydown键盘按下
+	keyup键盘抬起
+	mouseout鼠标移出
+	blur失焦
+	focus聚焦
+例子:
+	全选功能
+		checkbox
+	全选
+	颜色    大小    透明度
+Object类型
+	｛键:键值｝
+			键值对
+	Obj.键=键值 
+	Obj[键]=键值
+1、	统计一个字符串中每个字符出现的个数(写)
+2、	Jquery实现图片墙(3*3列,图片高度可不同，宽度相同)动效：
+加载时图片实现渐隐渐现（即透明度从0到1）
+鼠标经过宽 高放大5%
+		鼠标点击后变换图片 
+3、	考虑一个算法:
+100层楼里只有一层有珠宝
+ 如何用最好的方法从100层的楼里快速找到有珠宝的那一层。
+
+	
+
